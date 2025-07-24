@@ -1,6 +1,5 @@
 package org.example.productmanager.controller;
 
-import org.apache.coyote.Response;
 import org.example.productmanager.dto.CreateProductRequest;
 import org.example.productmanager.dto.ProductResponse;
 import org.example.productmanager.model.Product;
