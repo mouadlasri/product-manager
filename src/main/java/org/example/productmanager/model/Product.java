@@ -1,14 +1,22 @@
 package org.example.productmanager.model;
 
+import jakarta.persistence.*;
+
 import java.util.Objects;
 
+@Entity // marks this class aqs a JPA entity instead of just a plain java class
+@Table(name = "product") // specifies the table name
 public class Product {
+    @Id // makes this field as a primary key
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // tells the database to auto-increment the ID
     private Long id;
     private String name;
     private String description;
     private double price;
 
-    public Product() {};
+    public Product() {
+        // JPA requires a default no-argument constructor
+    };
 
     public Product(String name, String description, double price) {
         this.name = name;
@@ -23,6 +31,7 @@ public class Product {
         this.price = price;
     }
 
+    // getts and setters for all fields (JPA requires these
     public Long getId() {
         return id;
     }
