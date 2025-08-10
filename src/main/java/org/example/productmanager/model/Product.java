@@ -10,8 +10,14 @@ public class Product {
     @Id // makes this field as a primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY) // tells the database to auto-increment the ID
     private Long id;
+
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "description")
     private String description;
+
+    @Column(name = "price")
     private double price;
 
     public Product() {
