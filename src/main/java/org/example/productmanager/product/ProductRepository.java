@@ -1,6 +1,5 @@
-package org.example.productmanager.repository;
+package org.example.productmanager.product;
 
-import org.example.productmanager.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

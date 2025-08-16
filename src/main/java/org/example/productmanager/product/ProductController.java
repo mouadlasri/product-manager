@@ -1,10 +1,7 @@
-package org.example.productmanager.controller;
+package org.example.productmanager.product;
 
-import org.example.productmanager.dto.CreateProductRequest;
-import org.example.productmanager.dto.ProductResponse;
-import org.example.productmanager.model.Product;
-import org.example.productmanager.service.ProductService;
-
+import org.example.productmanager.product.dto.CreateProductRequest;
+import org.example.productmanager.product.dto.ProductResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

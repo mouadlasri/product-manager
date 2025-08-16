@@ -1,7 +1,4 @@
-package org.example.productmanager.dto;
-
-import org.example.productmanager.model.Order;
-import org.example.productmanager.model.Product;
+package org.example.productmanager.order.dto;
 
 public class OrderItemResponse {
     private Long id; // if of the order item itself

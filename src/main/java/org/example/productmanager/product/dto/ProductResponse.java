@@ -1,4 +1,4 @@
-package org.example.productmanager.dto;
+package org.example.productmanager.product.dto;
 
 import java.util.Objects;
 

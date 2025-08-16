@@ -1,7 +1,7 @@
-package org.example.productmanager.dto;
+package org.example.productmanager.order.dto;
 
-import org.example.productmanager.model.Order;
-import org.example.productmanager.model.Product;
+import org.example.productmanager.order.Order;
+import org.example.productmanager.product.Product;
 
 public class OrderItemRequest {
     private int quantity;

@@ -1,6 +1,7 @@
-package org.example.productmanager.model;
+package org.example.productmanager.order;
 
 import jakarta.persistence.*;
+import org.example.productmanager.product.Product;
 
 @Entity
 @Table(name = "orderitem")

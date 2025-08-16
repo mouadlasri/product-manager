@@ -1,4 +1,4 @@
-package org.example.productmanager.model;
+package org.example.productmanager.product;
 
 import jakarta.persistence.*;
 

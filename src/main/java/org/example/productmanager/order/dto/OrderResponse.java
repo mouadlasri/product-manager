@@ -1,8 +1,7 @@
-package org.example.productmanager.dto;
+package org.example.productmanager.order.dto;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Objects;
 
 public class OrderResponse {
     private Long id;

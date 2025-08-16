@@ -1,7 +1,6 @@
-package org.example.productmanager.dto;
+package org.example.productmanager.order.dto;
 
 import java.util.List;
-import java.util.Objects;
 
 public class CreateOrderRequest {
     private String customerName;
