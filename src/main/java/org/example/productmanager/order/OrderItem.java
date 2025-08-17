@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import org.example.productmanager.product.Product;
 
 @Entity
-@Table(name = "orderitem")
+@Table(name = "order_item")
 public class OrderItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -7,7 +7,7 @@ public class OrderResponse {
     private Long id;
     private String customerName;
     private LocalDateTime orderDate;
-    private List<OrderItemResponse> items; // list of the netsted DTO
+    private List<OrderItemResponse> items; // list of the nested DTO
 
     public OrderResponse() {}
 

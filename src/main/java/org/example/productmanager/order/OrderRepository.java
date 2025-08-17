@@ -1,10 +1,8 @@
-package org.example.productmanager.product;
+package org.example.productmanager.order;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
-@Repository
-public interface ProductRepository extends JpaRepository<Product, Long> { // <Entity, PrimaryKey>
+public interface OrderRepository extends JpaRepository<Order, Long> { // <Entity, Primary Key>
     // We don't need to write any methods here for basic CRUD.
     // The JpaRepository interface already provides them.
     // Spring will automatically create a class that implements this at runtime.

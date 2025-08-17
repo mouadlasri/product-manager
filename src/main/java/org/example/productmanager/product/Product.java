@@ -1,8 +1,11 @@
 package org.example.productmanager.product;
 
 import jakarta.persistence.*;
+import org.example.productmanager.order.OrderItem;
 
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity // marks this class aqs a JPA entity instead of just a plain java class
 @Table(name = "product") // specifies the table name
@@ -19,6 +22,10 @@ public class Product {
 
     @Column(name = "price")
     private double price;
+
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<OrderItem> orderItems = new HashSet<>();
+
 
     public Product() {
         // JPA requires a default no-argument constructor
@@ -68,6 +75,14 @@ public class Product {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public void setOrderItems(Set<OrderItem> orderItems) {
+        this.orderItems = orderItems;
+    }
+
+    public Set<OrderItem> getOrderItems() {
+        return orderItems;
     }
 
     @Override

@@ -9,6 +9,12 @@ public class OrderItemResponse {
 
     public OrderItemResponse() {}
 
+    public OrderItemResponse(Long id, Long productId, int quantity) {
+        this.id = id;
+        this.productId = productId;
+        this.quantity = quantity;
+    }
+
     public OrderItemResponse(Long id, Long productId, int quantity, String productName, double productPrice) {
         this.id = id;
         this.productId = productId;

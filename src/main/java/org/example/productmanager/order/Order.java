@@ -30,7 +30,6 @@ public class Order {
         this.orderDate = orderDate;
     }
 
-
     public Long getId() {
         return id;
     }
